@@ -1,9 +1,16 @@
+"use client";
+
 import Image from "next/image";
+
+// @ts-expect-error #TODO: Remove this line when the ab-ui package is updated to Typescript
+import { Button } from "@dukeofgaming/ab-ui";
+
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <h1>AB App</h1>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -17,11 +24,19 @@ export default function Home() {
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               src/app/page.tsx
-            </code>
-            .
+            </code>.
           </li>
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
+          </li>
+          <li className="tracking-[-.01em]">
+            Use the AB-UI Design System <a href="https://github.com/dukeofgaming/ab-ui">(GitHub)</a>: 
+            <br />
+            <br />
+            <Button onClick={() => window.open("https://dukeofgaming.github.io/ab-ui")}>Storybook (main) @ Github Pages</Button> 
+            <br />
+            <br />
+            <Button onClick={() => window.open("https://www.chromatic.com/library?appId=6859827d92dfebdf526cc555")}>Storybook (develop) @ Chromatic</Button>
           </li>
         </ol>
 
