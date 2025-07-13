@@ -13,7 +13,7 @@ export default function Home() {
         <h1>AB App</h1>
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src={`${process.env.NEXT_BASE_PATH || ""}/next.svg`}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -75,7 +75,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={`${process.env.NEXT_BASE_PATH || ""}/file.svg`}
             alt="File icon"
             width={16}
             height={16}
@@ -90,7 +90,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src={`${process.env.NEXT_BASE_PATH || ""}/window.svg`}
             alt="Window icon"
             width={16}
             height={16}
@@ -105,7 +105,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src={`${process.env.NEXT_BASE_PATH || ""}/globe.svg`}
             alt="Globe icon"
             width={16}
             height={16}
