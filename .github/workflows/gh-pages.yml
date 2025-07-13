@@ -26,6 +26,11 @@ jobs:
 
       - name: Build static site
         run: |
+          REPO_NAME="${GITHUB_REPOSITORY##*/}"
+
+          export NEXT_BASE_PATH=/$REPO_NAME
+          export NEXT_ASSET_PREFIX=/$REPO_NAME/
+
           npm run build
 
       - name: Deploy to GitHub Pages
