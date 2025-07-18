@@ -1,0 +1,12 @@
+{
+    "markdown.marp.exportType": "html",
+    "D2.previewLayout"  : "tala",
+    "foam.graph.style": {
+        "particleWidth": 2.0,
+        "node": {
+            "ADR": "#ff6666",
+            "Feature": "#66ff66",
+            "Presentation": "#ffff33",
+        }
+    }
+}
