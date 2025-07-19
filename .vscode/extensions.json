@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ms-azuretools.vscode-docker",
+        "Terrastruct.d2",
+        "ms-playwright.playwright",
+        "Gruntfuggly.todo-tree",
+        "marp-team.marp-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "SonarSource.sonarlint-vscode",
+        "watahani.markdown-image-paste-for-remote",
+        "foam.foam-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // See https://code.visualstudio.com/docs/editor/tasks-appendix
+    // https://stackoverflow.com/questions/72817555/devcontainer-how-to-open-terminal-with-custom-commands-when-opening-the-contain
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "NPM install",
+            "type": "shell",
+            "command": "npm install",
+            "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen",
+            },
+            "icon": {
+                "id": "package",
+                "color": "terminal.ansiRed"   
+            }
+        },
+        {
+            "label": "NextJS",
+            "dependsOn": "NPM install",
+            "type": "shell",
+            "command": "npm run dev",
+            "isBackground": true, 
+            "problemMatcher": [],
+            "presentation": {
+                "group": "development",
+                "reveal": "always",
+                "panel": "new",
+            },
+            "runOptions": {
+                "runOn": "folderOpen",
+            },
+            "icon": {
+                "id": "combine",
+                "color": "terminal.ansiYellow"
+            }
+        },
+    ]
+}
