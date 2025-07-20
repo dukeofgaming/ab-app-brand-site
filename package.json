@@ -2,7 +2,11 @@
   "name": "@dukeofgaming/ab-app",
   "description": "AB Template application",
   "version": "0.1.2",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
