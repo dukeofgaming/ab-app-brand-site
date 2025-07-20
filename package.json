@@ -1,5 +1,5 @@
 {
-  "name": "ab-app",
+  "name": "@dukeofgaming/ab-app",
   "description": "AB Template application",
   "version": "0.1.2",
   "private": true,
