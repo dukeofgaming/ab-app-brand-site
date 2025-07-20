@@ -22,7 +22,7 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li>
-            Fork this repository: <a href="https://github.com/dukeofgaming/ab-app">dukeofgaming/ab-app</a>
+            Clone this repository <a href="https://github.com/dukeofgaming/ab-app">🔗dukeofgaming/ab-app</a>
           </li>
           <li className="tracking-[-.01em]">
             Get started by editing{" "}
@@ -31,18 +31,23 @@ export default function Home() {
             </code>.
           </li>
           <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
+            Save and see your changes instantly with <code>npm run dev</code>
           </li>
           <li className="tracking-[-.01em]">
-            Use the AB-UI Design System <a href="https://github.com/dukeofgaming/ab-ui">(GitHub)</a>: 
+            Use the AB-UI Design System <a href="https://github.com/dukeofgaming/ab-ui">(🔗GitHub)</a>: 
             <br />
             <br />
             <Button onClick={() => window.open("https://dukeofgaming.github.io/ab-ui")}>Storybook (main) @ Github Pages</Button> 
-            <br />
-            <br />
+            &nbsp;
             <Button onClick={() => window.open("https://www.chromatic.com/library?appId=6859827d92dfebdf526cc555")}>Storybook (develop) @ Chromatic</Button>
           </li>
         </ol>
+        <h2>Optional</h2>
+        <ul>
+          <li>
+            Run <code>npm run repo:set-upstream</code> to upgrade the base project from the upsgtream branch or remote.
+          </li>
+        </ul>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
