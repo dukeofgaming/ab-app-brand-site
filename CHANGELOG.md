@@ -1,5 +1,12 @@
 # ab-app
 
+## 0.1.5
+
+### Patch Changes
+
+- dc1dce6: Fixing missing contents and pull-requests write permissions
+- 1ba4c31: Fixing GitHub Actions permission to enable provenance when publishing to NPM
+
 ## 0.1.4
 
 ### Patch Changes
