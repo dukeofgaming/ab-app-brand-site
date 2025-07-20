@@ -1,5 +1,11 @@
 # ab-app
 
+## 0.1.4
+
+### Patch Changes
+
+- 7280af8: Configuring package visibility and enabling provenance for traceability
+
 ## 0.1.3
 
 ### Patch Changes
