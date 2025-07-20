@@ -1,5 +1,11 @@
 # ab-app
 
+## 0.1.6
+
+### Patch Changes
+
+- be55675: Added repository to package.json which is a provenance requirement
+
 ## 0.1.5
 
 ### Patch Changes
