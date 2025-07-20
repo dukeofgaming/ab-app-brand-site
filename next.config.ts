@@ -10,6 +10,8 @@ const packageJson = JSON.parse(
 const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_APP_VERSION: packageJson.version,
+    NEXT_PUBLIC_APP_NAME: packageJson.name,
+    NEXT_PUBLIC_APP_DESCRIPTION: packageJson.description,
   },
   basePath    : process.env.NEXT_BASE_PATH ?? "",
   assetPrefix : process.env.NEXT_ASSET_PREFIX ?? "",
