@@ -1,5 +1,11 @@
 # ab-app
 
+## 0.1.3
+
+### Patch Changes
+
+- 9867cd6: Changing package name so that it publishes to NPM
+
 ## 0.1.2
 
 ### Patch Changes
