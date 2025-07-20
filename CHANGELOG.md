@@ -1,5 +1,12 @@
 # ab-app
 
+## 0.1.2
+
+### Patch Changes
+
+- 5d2df6a: Improved landing page with usage instructions and upstream repo config
+- 1aa2b0e: Configure release workflow with NPM publishing through changesets
+
 ## 0.1.1
 
 ### Patch Changes
