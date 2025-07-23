@@ -7,11 +7,10 @@ import Image from "next/image";
 
 // Helper to fetch brand data
 async function fetchBrandsData(): Promise<Brand[]> {
-  const res = await fetch(
-    "https://raw.githubusercontent.com/ab-internal/ab-app-brands/refs/heads/data/brands.json",
-    { cache: "no-store" }
-  );
+  const res = await fetch("https://raw.githubusercontent.com/ab-internal/ab-app-brands/refs/heads/data/brands.json");
+
   if (!res.ok) throw new Error("Failed to fetch brands");
+
   return res.json();
 }
 
@@ -31,9 +30,10 @@ type Brand = {
   description: string;
 };
 
-export default async function BrandPage({ params }: { params: { id: string } }) {
+export default async function BrandPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const brands = await getBrands();
-  const brand = brands.find((b: Brand) => String(b.id) === params.id);
+  const brand = brands.find((b: Brand) => String(b.id) === id);
   if (!brand) return notFound();
 
   // Utility to convert brand name to slug

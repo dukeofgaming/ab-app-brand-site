@@ -9,11 +9,10 @@ type Brand = {
 };
 
 async function getBrands(): Promise<Brand[]> {
-  const res = await fetch(
-    "https://raw.githubusercontent.com/ab-internal/ab-app-brands/refs/heads/data/brands.json",
-    { cache: "no-store" }
-  );
+  const res = await fetch("https://raw.githubusercontent.com/ab-internal/ab-app-brands/refs/heads/data/brands.json");
+
   if (!res.ok) throw new Error("Failed to fetch brands");
+  
   return res.json();
 }
 
