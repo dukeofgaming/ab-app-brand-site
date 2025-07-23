@@ -11,7 +11,12 @@ export interface AgeVerificationClientWrapperProps extends AgeVerificationProps 
   children?: React.ReactNode;
 }
 
-export default function AgeVerificationClientWrapper({ brand, children, ...ageVerificationProps }: AgeVerificationClientWrapperProps) {
+export default function AgeVerificationClientWrapper({ 
+    brand, 
+    children, 
+    ...ageVerificationProps 
+}: AgeVerificationClientWrapperProps) {
+    
   const [verified, setVerified] = useState(false);
 
   return (
