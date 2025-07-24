@@ -36,10 +36,11 @@ export default async function BrandPage({ params }: { params: Promise<{ id: stri
   const brand = brands.find((b: Brand) => String(b.id) === id);
   if (!brand) return notFound();
 
-  // Utility to convert brand name to slug
   const brandSlug = String(brand.name).toLowerCase().replace(/\s+/g, "-");
-  const heroBgUrl = `/images/hero-bg/${brandSlug}.png`;
-  const logoUrl = `/images/logo/${brandSlug}.png`;
+  const basePath = process.env.NEXT_BASE_PATH || "";
+
+  const heroBgUrl = `${basePath}/images/hero-bg/${brandSlug}.png`;
+  const logoUrl = `${basePath}/images/logo/${brandSlug}.png`;
 
   return (
     <>
