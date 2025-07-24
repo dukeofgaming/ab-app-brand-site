@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@import "@dukeofgaming/ab-ui/css/tokens";
+@import "@dukeofgaming/ab-ui/css/themes";
+
+@source "../node_modules/@dukeofgaming/ab-ui";
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
