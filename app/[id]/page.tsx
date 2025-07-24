@@ -67,6 +67,9 @@ export default async function BrandPage({ params }: { params: Promise<{ id: stri
                 priority
               />
               <span style={{ fontWeight: 700, fontSize: 24, color: '#222', letterSpacing: 1 }}>{brand.name}</span>
+              <span style={{ marginLeft: 16, fontSize: 16, color: '#666', fontWeight: 400, opacity: 0.85, whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden', maxWidth: 300 }}>
+                {brand.description}
+              </span>
             </Link>
             <div style={{ flex: 1 }} />
             <Link href="/" style={{ fontSize: 18, color: '#0066cc', textDecoration: 'none', fontWeight: 500, padding: '8px 20px', borderRadius: 8, transition: 'background 0.2s', background: 'rgba(0,102,204,0.06)' }}>Home</Link>
