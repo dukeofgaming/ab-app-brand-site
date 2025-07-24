@@ -23,9 +23,6 @@ export default async function Home() {
       {/* Hero Section */}
       <section style={{ background: '#fff', padding: '48px 0', textAlign: 'center', boxShadow: '0 2px 8px #0001' }}>
         <h1 style={{ fontSize: 40, margin: 0 }}>Welcome to AB Brand Sites</h1>
-        <p style={{ fontSize: 20, color: '#555', marginTop: 16 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum.
-        </p>
       </section>
       {/* Brand List */}
       <section style={{ maxWidth: 900, margin: '48px auto', background: '#fff', padding: 32, borderRadius: 12, boxShadow: '0 2px 8px #0001' }}>

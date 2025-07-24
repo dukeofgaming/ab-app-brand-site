@@ -73,11 +73,11 @@ export default async function BrandPage({ params }: { params: Promise<{ id: stri
 
           {/* Hero Section */}
           <section style={{
-            background: `url(${heroBgUrl}) center/cover no-repeat, #fff`,
+            background: `url(${heroBgUrl}) top center/cover no-repeat, #fff`,
             padding: '48px 0',
             textAlign: 'center',
             boxShadow: '0 2px 8px #0001',
-            minHeight: 320,
+            minHeight: 800,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
